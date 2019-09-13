@@ -18,6 +18,7 @@ function addNewLiOnClick() {
     let node = document.createElement("LI");    
   node.innerHTML = retrieveEmployeeInformation();
    document.querySelector('ul.employee-list').appendChild(node);
+   document.querySelector('form input').value = "";
 }
 function clearEmployeeListOnLinkClick() {
   document.querySelector('a').addEventListener('click', function(e) {
