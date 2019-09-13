@@ -1,12 +1,10 @@
 function preventRefreshOnSubmit(){
     document.querySelector('form').addEventListener('submit', function(event){
       event.preventDefault();
-      event.stopPropagation();
-      addNewElementAsLi();
     })
 }
 
-preventDefault()
+preventRefreshOnSubmit()
 
 function retrieveEmployeeInformation() {
  return document.querySelector('form input:first').value
