@@ -6,7 +6,7 @@ function preventRefreshOnSubmit(){
     })
 }
 
-preventRefreshOnSubmit()
+preventDefault()
 
 function retrieveEmployeeInformation() {
  return document.querySelector('form input:first').value
