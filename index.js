@@ -1,6 +1,7 @@
 function preventRefreshOnSubmit(){
     document.querySelector('form').addEventListener('submit', function(event){
-      event.preventDefault(true);
+      event.preventDefault();
+      event.stopPropagation();
       addNewElementAsLi();
     })
 }
